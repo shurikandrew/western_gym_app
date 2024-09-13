@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+    height: 100%;
+    width: 100%;
+    font-family: 'Black Ops One', sans-serif;
+    @apply text-primary bg-background;
+}
+
+.div-transition{
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.div-transition.menuShow{
+    transform: unset;
+    opacity: 1;
+}
